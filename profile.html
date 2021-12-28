@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="src/profile.css">
+</head>
+<body>
+    <div id="app">
+        <div class="user">
+            <div class="avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSClCC2sTN0JYMZx12xcEgb5lELVfcJbTWAgmypCgB_fhJ6_VSx_fmrojdUj48pa7G5aYY&usqp=CAU" title='Стандартный аватар новичка' alt="">
+                <br><span id="login"></span><br>
+                <br><button title="пока недоступно" disabled >сохранить текущий аватар</button>
+            </div>
+            <fieldset for="">
+                <legend>Смена пароля</legend>
+                <label for="">
+                    <!-- старый -->
+                    <input type="password" name="oldpassword" id='oldpass' placeholder="Старый пароль" class="inputs">
+                    <span class="required hidden">✓</span>
+                </label>
+                <label for="">
+                    <!-- новый -->
+                    <input type="password" name="password" id='pass' placeholder="Новый пароль" disabled='true' class="inputs">
+                    <span class="required hidden">✓</span>
+                </label>
+                <label for="">
+                    <input type="password" id='pass2' name="password2" placeholder="Повторите" class="inputs hidden">
+                    <span class="required hidden">✓</span>
+                </label>
+                
+                <button disabled class="btn-login save-changes">изменить пароль</button>
+                <button id='forgetpass'>забыл пароль</button>
+            </fieldset>
+            
+        </div>
+        <div class="info">
+            
+                <button title="пока недоступно" disabled>Добавить информацию о себе</button>
+            
+        </div>
+        <div class="contacts">
+            
+                <!-- <li>instagram<input type="text" name='social-instagram'></li>
+                <li>facebook<input type="text" name='social-facebook'></li>
+                <li>twitter<input type="text" name='social-twitter'></li>  -->
+                <button title="пока недоступно" disabled>Добавить социальную сеть</button>
+            
+        </div>
+    </div>
+    <script src="src/profile.js"></script>
+</body>
+</html>

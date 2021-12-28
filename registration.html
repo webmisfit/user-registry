@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="src/regauth.css">
+</head>
+<body>
+  
+<div id="feedback-form">
+  <h2 class="header">Регистрация</h2>
+  <div>
+    <form name='form'>
+      <label for="">
+        <span class="error name-error"></span>
+        <input autocomplete="off" type="text" name="name" placeholder="Имя" required class="reg"></input>
+        <span class="required hidden">✓</span>
+      </label>
+      <!-- <span class="name-error notvisible">такой юзер уже есть</span> -->
+      <label for="" class="">
+        <span class="error password-error"></span>
+        <input autocomplete="off" type="password" name="password" placeholder="Пароль" required class="reg"></input>
+        <span class="required hidden">✓</span>
+      </label>
+      <label for="" class="">
+        <!-- <span class="error password-error"></span> -->
+        <input autocomplete="off" type="password" name="password2" placeholder="Повторите пароль" required class="reg hidden"></input>
+        <span class="required hidden">✓</span>
+      </label>
+      
+      <!-- <input type="checkbox" id="feedback-notify" name="notify">
+      <input type="text" id="feedback-phone" name="phone" placeholder="Phone number"></input> -->
+      <button name='submit' type="submit">Зарегистрировать</button>
+    </form>
+  </div>
+</div>
+<script src="src/reg.js"></script>
+</body>
+</html>
